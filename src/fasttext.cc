@@ -51,6 +51,10 @@ std::shared_ptr<const Matrix> FastText::getOutputMatrix() const {
   return output_;
 }
 
+std::shared_ptr<const Model> FastText::getModel() const {
+      return model_;
+}
+
 int32_t FastText::getWordId(const std::string& word) const {
   return dict_->getId(word);
 }

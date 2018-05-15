@@ -75,6 +75,8 @@ class FastText {
   std::shared_ptr<const Dictionary> getDictionary() const;
   std::shared_ptr<const Matrix> getInputMatrix() const;
   std::shared_ptr<const Matrix> getOutputMatrix() const;
+  std::shared_ptr<const Model> getModel() const;
+
   void saveVectors();
   void saveModel(const std::string);
   void saveOutput();
